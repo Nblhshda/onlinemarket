@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS test page</title>
+    <link rel="stylesheet" href="styles/externalcss.css">
+    <style>
+      input:invalid{
+        border: 2px dashed red;
+      }
+      input:valid {
+        border: 2px solid black
+      }
+      textarea:invalid{
+        border: 2px dashed red;
+      }
+      textarea:valid {
+        border: 2px solid black
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Online Market</h1>
+
+    <a href="home.html">Home</a>
+    <a href="contact.html">Contact</a>
+
+    <h2>New Product Details</h2>
+    <br>
+
+    <table>
+      <tr>
+          <th rowspan="4" >Product</th>
+      </tr>
+
+      <tr>
+        <th style="color:red">Name</th>
+        <td>1x</td>
+        <td>2x</td>
+        <td>3x</td>
+        <td>4x</td>
+
+      </tr>
+
+      <tr>
+        <th>Price</th>
+        <td id="price">3.00</td>
+        <td>5.00</td>
+        <td>7.00</td>
+        <td>9.00</td>
+      </tr>
+
+      <tr>
+        <th>Quantity</th>
+        <td>3</td>
+        <td>6</td>
+        <td>4</td>
+        <td>9</td>
+      </tr>
+
+    </table>
+    <p>To order product online, please submit form below</p>
+    <form>
+      <fieldset>
+        <p>
+        <label for="name">Name :</label>
+        <input type="text" id="name" maxlength="10" required>
+        </p>
+        <p>
+        <label for="address">Address :</label>
+        <textarea name="addr" ></textarea>
+        </p>
+        <p>
+        <label for="email">Email :</label>
+        <input type="text" id="email" required>
+        </p>
+        <p>
+        <label for="number">Phone Number : +60</label>
+        <input type="text" id="num" required>
+        </p>
+        <br/><br/>
+      <fieldset>
+
+        <legend>What is your favourite subject?</legend>
+        <input type="radio" checked id="Math" name="meal" >
+        <label>Math</label>
+        <input type="radio" name="sbj" value="science">
+        <label>Science</label>
+        <input type="radio" name="sbj" value="bio">
+        <label>Biology</label>
+      </fieldset>
+      <br/>
+
+      <select class="studylvl" name="Study Level">
+        <option value="studylvl">Study Level</option>
+        <option value="ug">UnderGraduate</option>
+        <option value="pg">PostGraduate</option>
+      </select>
+      <br/><br/><br/>
+
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+
+
+
+      </fieldset>
+      </form>
+
+
+
+
+  </body>
+</html>
